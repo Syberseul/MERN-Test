@@ -10,7 +10,7 @@ app.use(express.json()); // accept JSON object received from front-end
 
 // Database Connection
 mongoose.connect(
-  "mongodb+srv://FirstDatabase:Soul_403058721@cluster0.tnkve.mongodb.net/test",
+  `mongodb+srv://FirstDatabase:${password}@cluster0.tnkve.mongodb.net/test`,
   { useNewUrlParser: true }
 );
 
